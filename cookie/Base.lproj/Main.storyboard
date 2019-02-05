@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Din-xF-jxw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,16 +10,41 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Shop-->
+        <scene sceneID="cW0-Cc-93j">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cookie" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="w9y-1A-aKu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TnB-KD-588">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="C7t-ZX-fN9"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shop" id="RUQ-mL-S4P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fy2-gC-WZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77" y="-603"/>
+        </scene>
+        <!--Cookie-->
+        <scene sceneID="Gmb-nW-gCr">
+            <objects>
+                <viewController id="zEQ-Rc-bE9" customClass="ViewController" customModule="cookie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3JG-LF-dyH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HI-id-1hj">
+                                <rect key="frame" x="155" y="291" width="65" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="🍪"/>
+                                <connections>
+                                    <action selector="touchCookie:" destination="zEQ-Rc-bE9" eventType="touchUpInside" id="7uw-ln-D3t"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="jdA-Y2-PpD">
-                                <rect key="frame" x="16" y="626" width="145" height="20.5"/>
+                                <rect key="frame" x="115" y="555" width="145" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cookies Clicked:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovC-qE-qN0">
@@ -36,46 +61,36 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HI-id-1hj">
-                                <rect key="frame" x="155" y="291" width="65" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <state key="normal" title="🍪"/>
-                                <connections>
-                                    <action selector="touchCookie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ht-3x-00U"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <gestureRecognizers/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="oVd-E6-fe3"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Cookie" id="oqf-nK-vch"/>
                     <connections>
-                        <outlet property="clickCountLabel" destination="POV-vZ-rbm" id="uN3-6B-J7A"/>
-                        <segue destination="k2g-Ai-IL3" kind="presentation" identifier="goRight" id="3Q3-Fc-Hi6"/>
+                        <outlet property="clickCountLabel" destination="POV-vZ-rbm" id="jz8-Dc-hMb"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c41-4j-5ht" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="77" y="-1268"/>
         </scene>
-        <!--Second View Controller-->
-        <scene sceneID="CxK-UU-n6Y">
+        <!--Tab Bar Controller-->
+        <scene sceneID="SMw-Qx-SIk">
             <objects>
-                <viewController id="k2g-Ai-IL3" customClass="SecondViewController" customModule="cookie" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jFX-5u-SLA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="xlk-d0-dPi"/>
-                    </view>
+                <tabBarController id="Din-xF-jxw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cca-uD-Fx8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="goLeft" id="sMN-rY-QEn"/>
+                        <segue destination="zEQ-Rc-bE9" kind="relationship" relationship="viewControllers" id="OOv-rx-od6"/>
+                        <segue destination="w9y-1A-aKu" kind="relationship" relationship="viewControllers" id="PVG-k9-Ld5"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H4w-4E-Lvm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HJj-Gb-Yqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1231" y="134"/>
+            <point key="canvasLocation" x="-873" y="-935"/>
         </scene>
     </scenes>
 </document>
