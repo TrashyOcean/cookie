@@ -10,13 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
+    // TODO: Make bigger on click
+    
     var clickCount = 0 {
         didSet {
             clickCountLabel.text = "\(clickCount)"
         }
     }
-
     
     @IBOutlet weak var clickCountLabel: UILabel!
     
@@ -24,11 +24,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        /*
-        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
-        leftSwipe.direction = UISwipeGestureRecognizer.Direction.left
-        self.view.addGestureRecognizer(leftSwipe)
-        */
     }
 
     @IBAction func touchCookie(_ sender: UIButton) {
@@ -37,18 +32,5 @@ class ViewController: UIViewController {
     
 }
 
-/*
-extension UIViewController {
-    @objc func swipeAction(swipe: UISwipeGestureRecognizer) {
-        switch swipe.direction.rawValue {
-        case 1:
-            performSegue(withIdentifier: "goLeft", sender: self)
-        case 2:
-            performSegue(withIdentifier: "goRight", sender: self)
-        default:
-            break
-        }
-    }
-}
-*/
+
 
