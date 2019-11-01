@@ -17,10 +17,10 @@
                     <view key="view" contentMode="scaleToFill" id="TnB-KD-588">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="C7t-ZX-fN9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shop" id="RUQ-mL-S4P"/>
+                    <tabBarItem key="tabBarItem" title="winkel van tante kees" id="RUQ-mL-S4P"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fy2-gC-WZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,7 +49,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1HI-id-1hj" firstAttribute="top" secondItem="POV-vZ-rbm" secondAttribute="bottom" constant="8" symbolic="YES" id="BfH-Zh-4kh"/>
                             <constraint firstItem="POV-vZ-rbm" firstAttribute="centerX" secondItem="oVd-E6-fe3" secondAttribute="centerX" id="UsO-vT-5t2"/>
@@ -58,7 +58,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oVd-E6-fe3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cookie" id="oqf-nK-vch"/>
+                    <tabBarItem key="tabBarItem" title="penispoepseksintantegreet" id="oqf-nK-vch"/>
                     <connections>
                         <outlet property="clickCountLabel" destination="POV-vZ-rbm" id="jz8-Dc-hMb"/>
                     </connections>
